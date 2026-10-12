@@ -60,26 +60,18 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.03em; }
     box-shadow: 0 0 8px #22c55e;
 }
 .hero h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
     line-height: 1.1;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     font-weight: 600;
     letter-spacing: -0.03em;
 }
-.hero-tagline {
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-    color: #a78bfa;
-    font-weight: 300;
-    margin-bottom: 24px;
-    letter-spacing: 0.02em;
-}
-.hero-desc {
-    font-size: 1.05rem;
+.hero p {
+    font-size: 1.1rem;
     color: var(--text-secondary);
-    max-width: 420px;
+    max-width: 520px;
     margin: 0 auto 40px;
     font-weight: 300;
-    line-height: 1.6;
 }
 
 .btn-primary {
