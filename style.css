@@ -75,9 +75,9 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.03em; }
 }
 .hero h1 .text-gradient-accent {
     display: block;
-    font-size: 0.55em;
+    font-size: 0.7em;
     margin-top: 8px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0;
 }
 .hero > p {
