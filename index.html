@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotoci Muzbot — Обработка музыки в Telegram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <header class="hero container animate-in">
+        <div class="hero-badge">
+            <span class="status-dot"></span>
+            Telegram Music Bot
+        </div>
+        <h1>Hotoci Muzbot<br><span class="text-gradient-accent">нового уровня</span></h1>
+        <p>Минималистичный, быстрый и мощный инструмент для создания Slowed, Sped Up, Nightcore и Bass Boost треков прямо в Telegram.</p>
+        <a href="https://t.me/h182robot" class="btn-primary" target="_blank" rel="noopener">
+            Запустить бота
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </header>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>Возможности</h2>
+            <p>Нажми на карточку, чтобы узнать детали</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" onclick="toggleCard(this)">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+                </div>
+                <h3>Slowed</h3>
+                <div class="feature-details">
+                    <div class="feature-details-inner">
+                        <p>Замедляет трек и добавляет эхо. Получается тягучий, атмосферный звук — как в грустных эдитах.</p>
+                        <span class="feature-tag">Популярный выбор</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card" onclick="toggleCard(this)">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <h3>Sped Up</h3>
+                <div class="feature-details">
+                    <div class="feature-details-inner">
+                        <p>Ускоряет трек. Звучит бодро и энергично — тот самый формат, который залетает в TikTok.</p>
+                        <span class="feature-tag">Высокая энергия</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card" onclick="toggleCard(this)">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </div>
+                <h3>Nightcore</h3>
+                <div class="feature-details">
+                    <div class="feature-details-inner">
+                        <p>Ускоряет и повышает голос. Получается писклявый анимешный стиль — ярко и звонко.</p>
+                        <span class="feature-tag">Стилизация</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card" onclick="toggleCard(this)">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 12v10a10 10 0 0 0 10-10"/></svg>
+                </div>
+                <h3>Bass Boost</h3>
+                <div class="feature-details">
+                    <div class="feature-details-inner">
+                        <p>Качает басы. Для тех, кто любит, чтобы колонки дрожали. Без хрипа и грязи.</p>
+                        <span class="feature-tag">Для колонок</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>Как это работает</h2>
+            <p>Четыре простых шага до готового трека</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-content">
+                <div class="step-number">01</div>
+                <h3>Отправь файл</h3>
+                <p>Загрузи аудиофайл или отправь ссылку на трек прямо в чат с ботом.</p>
+            </div>
+            <div class="step-content">
+                <div class="step-number">02</div>
+                <h3>Выбери эффект</h3>
+                <p>Используй интуитивные инлайн-кнопки для выбора нужного режима.</p>
+            </div>
+            <div class="step-content">
+                <div class="step-number">03</div>
+                <h3>Метаданные</h3>
+                <p>Укажи название, исполнителя и загрузи кастомную обложку для релиза.</p>
+            </div>
+            <div class="step-content">
+                <div class="step-number">04</div>
+                <h3>Готово</h3>
+                <p>Получи обработанный файл, готовый к публикации.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>Ручная настройка</h2>
+            <p>Полный контроль над параметрами звука</p>
+        </div>
+        <div class="settings-grid">
+            <div class="setting-card">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    Скорость
+                </h4>
+                <div class="setting-value">0.5x – 2.0x</div>
+                <div class="setting-desc">Плавное замедление или ускорение темпа</div>
+            </div>
+            <div class="setting-card">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    Тон (Pitch)
+                </h4>
+                <div class="setting-value">0.5x – 2.0x</div>
+                <div class="setting-desc">Корректировка высоты звучания</div>
+            </div>
+            <div class="setting-card">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/></svg>
+                    Бас
+                </h4>
+                <div class="setting-value">0 – 20 dB</div>
+                <div class="setting-desc">Точная настройка низких частот</div>
+            </div>
+            <div class="setting-card">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h5l3 9 4-18 3 9h5"/></svg>
+                    Эхо (Reverb)
+                </h4>
+                <div class="setting-value">0 – 100%</div>
+                <div class="setting-desc">Добавление пространственной глубины</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>Интерфейс</h2>
+            <p>Чистый, удобный и интуитивно понятный</p>
+        </div>
+        <div class="screenshots-grid">
+            <div class="screenshot-frame">
+                <div class="phone-notch"></div>
+                <img src="assets/screen1.png" alt="Старт бота" class="screenshot-img">
+                <div class="screenshot-label">
+                    <h3>Главное меню</h3>
+                    <p>Команда /start и выбор базовых действий</p>
+                </div>
+            </div>
+            <div class="screenshot-frame">
+                <div class="phone-notch"></div>
+                <img src="assets/screen2.png" alt="Выбор режима" class="screenshot-img">
+                <div class="screenshot-label">
+                    <h3>Выбор эффекта</h3>
+                    <p>Инлайн-кнопки для мгновенного применения пресетов</p>
+                </div>
+            </div>
+            <div class="screenshot-frame">
+                <div class="phone-notch"></div>
+                <img src="assets/screen3.png" alt="Метаданные" class="screenshot-img">
+                <div class="screenshot-label">
+                    <h3>Настройка тегов</h3>
+                    <p>Ввод названия, артиста и загрузка обложки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h2>Оставайся на связи</h2>
+            <p>Попробуй бота, читай новости в канале или свяжись для заказа кастомной разработки.</p>
+            <div class="footer-links">
+                <a href="https://t.me/h182robot" class="footer-btn" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a205.66 205.66 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.69.506 1.054.978 1.054.387 0 .73-.256.978-.516.72-.752 1.44-1.504 2.16-2.256.588.436 1.176.872 1.764 1.308.39.29.78.58 1.238.746.64.232 1.34.07 1.81-.41.47-.48.66-1.15.78-1.81.53-3.01 1.06-6.02 1.59-9.03.13-.74.26-1.48.39-2.22.1-.58.18-1.16-.22-1.66-.36-.45-.93-.65-1.49-.65z"/></svg>
+                    <span>Бот @h182robot</span>
+                </a>
+                <a href="https://t.me/h182y" class="footer-btn" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <span>Канал @h182y</span>
+                </a>
+                <a href="https://t.me/exlipsefy" class="footer-btn" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Разработчик @exlipsefy</span>
+                </a>
+                <a href="https://github.com/felix587-bebe/muzbot" class="footer-btn" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    <span>GitHub репозиторий</span>
+                </a>
+            </div>
+            <div class="copyright">© 2026 Hotoci Muzbot. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
