@@ -44,7 +44,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.03em; }
 }
 
 /* HERO — ЧИТАЙ ВНИМАТЕЛЬНО */
-.hero { padding: 160px 0 100px; text-align: center; position: relative; }
+.hero { padding: 80px 0 80px; text-align: center; position: relative; }
 .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -352,7 +352,7 @@ section { padding: 120px 0; }
 .animate-in { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
 @media (max-width: 768px) {
-    .hero { padding: 120px 0 60px; }
+    .hero { padding: 60px 0 60px; }
     section { padding: 80px 0; }
     .section-header { margin-bottom: 48px; }
     .features-grid, .steps-grid, .settings-grid, .screenshots-grid {
