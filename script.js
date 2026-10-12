@@ -1,4 +1,3 @@
-// Аккордеон: при клике на карточку закрываем все остальные
 function toggleCard(card) {
     const isActive = card.classList.contains('active');
     document.querySelectorAll('.feature-card').forEach(c => c.classList.remove('active'));
@@ -7,7 +6,6 @@ function toggleCard(card) {
     }
 }
 
-// Эффект свечения, следующего за курсором
 document.querySelectorAll('.feature-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
